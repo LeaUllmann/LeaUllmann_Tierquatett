@@ -1,0 +1,265 @@
+:root {
+    --dark-color: #181818;
+    --background-color: rgb(195, 195, 175);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(211, 219, 215);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(254, 254, 254);
+    padding: 3rem;
+    margin: 0;
+}
+
+footer {
+    background-color: rgba(236, 243, 240, 0.619);
+    padding: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+    color: rgba(7, 62, 40, 0.424);
+}
+
+nav {
+    background-color: rgb(236, 243, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 550;
+    color: rgb(7, 62, 40);
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 4.7rem;
+    color: rgba(7, 62, 40, 0.435);
+    letter-spacing: 0.1em;
+    font-family: 'Londrina Sketch';
+}
+
+li {
+    padding: 0.5em 2em;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    opacity: 0.5;
+}
+
+li.selected {
+    color: white;
+    background-color: var(--selected-bg-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.card-number,
+.stat-icon,
+.stat-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-wrapper {
+    padding: .7rem;
+    display: inline-block;
+    margin: .5rem;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: .7rem;
+    background-color: white;
+}
+
+.card-content {
+    display: grid;
+    width: 300px;
+    height: 450px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    background-color: var(--background-color);
+    border-radius: .7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+
+}
+
+.card-number {
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+.group-A {
+    background-color: rgb(250, 199, 57);
+}
+
+.group-B {
+    background-color: rgb(124, 121, 121);
+}
+
+.group-C {
+    background-color: rgb(104, 205, 136);
+}
+
+.group-D {
+    background-color: rgb(114, 184, 204);
+}
+
+.group-E {
+    background-color: rgb(135, 166, 225);
+}
+
+.group-F {
+    background-color: rgb(231, 153, 94);
+}
+
+.group-G {
+    background-color: rgb(244, 117, 75);
+}
+
+.group-H {
+    background-color: rgb(235, 125, 232);
+}
+
+.group-A-background {
+    --background-color: rgba(251, 233, 183, 0.723);
+}
+
+.group-B-background {
+    --background-color: rgba(193, 193, 193, 0.609);
+}
+
+.group-C-background {
+    --background-color: rgba(199, 241, 212, 0.69);
+}
+
+.group-D-background {
+    --background-color: rgba(181, 217, 227, 0.546);
+}
+
+.group-E-background {
+    --background-color: rgba(193, 212, 247, 0.603);
+}
+
+.group-F-background {
+    --background-color: rgba(236, 202, 176, 0.682);
+}
+
+.group-G-background {
+    --background-color: rgba(241, 182, 163, 0.508);
+}
+
+.group-H-background {
+    --background-color: rgba(246, 215, 245, 0.589);
+}
+
+.card-title {
+    grid-column: span 3;
+    text-transform: uppercase;
+    padding-left: .5rem;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.0rem;
+}
+
+.card-image {
+    grid-column: span 4;
+    grid-row: span 5;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 0.8;
+}
+
+.card-trivia {
+    grid-column: span 4;
+    font-size: .7rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.79);
+    padding: 0 1.6rem;
+}
+
+.stat-icon img {
+    max-width: 30%;
+    max-height: 30%;
+    margin-bottom: 0.3rem;
+}
+
+.card-stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    padding: 0.7rem;
+    grid-column: span 4;
+}
+
+.card-stats {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(252, 252, 252, 0.446);
+    padding: 0.5rem;
+    border-radius: 15%;
+    font-size: 0.6rem;
+}
+
+.card-content:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s;
+
+}
+
+#burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#mobile-menu {
+    display: flex;
+}

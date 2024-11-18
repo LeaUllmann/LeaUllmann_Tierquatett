@@ -1,0 +1,98 @@
+@media screen and (max-width: 600px) {
+
+
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+
+    main,
+    ul {
+        flex-direction: column;
+    }
+
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    .card-content {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    #mobile-menu {
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 1000;
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+        transition: right 0.3s ease;
+        padding: 1rem;
+    }
+
+
+    #mobile-menu.active {
+        right: 0;
+    }
+
+    #burger-menu {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        color: rgb(7, 62, 40);
+        border-radius: 50%;
+        padding: 0.5rem;
+        font-size: 2rem;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    #mobile-menu ul {
+        list-style: none;
+        padding: 0;
+        padding-top: 13.7rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    #mobile-menu li {
+        padding: 1rem;
+        font-size: 0.8rem;
+        color: rgb(7, 62, 40);
+        font-weight: 550;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #mobile-menu li:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+
+
+}
